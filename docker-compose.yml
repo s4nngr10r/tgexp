@@ -1,0 +1,6 @@
+services:
+  comment-handler:
+    build: .
+    volumes:
+      - ./sessions:/app/sessions  # Persist Telegram session files
+    restart: unless-stopped 
